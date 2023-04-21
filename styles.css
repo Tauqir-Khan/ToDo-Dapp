@@ -67,3 +67,26 @@ h4 {
     text-align: center;
     margin-top: 30px;
 }
+
+#cube {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 20s linear infinite;
+}
+
+#cube > div {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin {
+  from { transform: rotateX(-0.1turn) rotateY(0turn); }
+  to { transform: rotateX(-0.1turn) rotateY(1turn); }
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid grey;
+  padding: 10px;
+}
